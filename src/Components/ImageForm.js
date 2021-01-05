@@ -25,6 +25,7 @@ class ImageForm extends React.Component {
 
   async getModel() {
     model = await mobilenet.load();
+    this.setState({ ready: true });
   }
 
   handleChange(e) {
@@ -42,7 +43,6 @@ class ImageForm extends React.Component {
 
   async componentDidMount() {
     this.getModel();
-    this.setState({ ready: true });
     console.log("Ready");
   }
 
@@ -80,7 +80,9 @@ class ImageForm extends React.Component {
             <div class ="Result"><Typography variant="h5">{this.state.breed}</Typography></div>
           </Card>
         ) : (
+          <div className="Loading">
           <CircularProgress />
+          </div>
         )}
       </div>
     );

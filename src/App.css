@@ -18,14 +18,26 @@
     min-width: 200px;
     min-height: 200px;
     color: black;
+    padding: 10px;
+
+}
+
+#output{
+    max-width: 300px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
 
 }
 
 .Card{
-    min-width: 300px;
-    min-height: 400px;
+    max-width: 400px;
+    max-height: 500px;
     margin: 10px;
     background-color: #4b5d67;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .SubmitButton{
@@ -39,4 +51,10 @@
     margin: 5px;
     text-align: center;
     width: 100%;
+}
+
+.Loading{
+    margin-left: 50%;
+    margin-right: auto;
+    margin-top: 10%;
 }

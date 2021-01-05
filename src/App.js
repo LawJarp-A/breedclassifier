@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ImageForm from './Components/ImageForm';
+import AppBar from '@material-ui/core/AppBar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import "./App.css"
+
+class App extends React.Component{
+  render(){
+    return (
+      <div>
+        <AppBar position="static">
+          <div className="AppBar">
+            <div className="Title">hackerspace</div>
+            <div className="Links">
+              <a href="https://github.com/HackerSpace-PESU">
+                <div className="Links">Github</div>
+              </a>
+              <a href="https://github.com/HackerSpace-PESU"><div className="Links">Instagram</div></a>
+            </div>
+          </div>
+        </AppBar>
+        <ImageForm></ImageForm>
+      </div>
+    );
+  }
 }
 
 export default App;

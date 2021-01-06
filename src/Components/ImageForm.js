@@ -49,25 +49,32 @@ class ImageForm extends React.Component {
   render() {
     return (
       <div>
+        <br></br>
+        <br></br>
         {this.state.ready ? (
-          <Card className="Card">
+          <Card className="Card" >
             <CardActionArea>
-              <div className="output">
-                <img
-                  id="output"
-                  alt=""
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbYNS2djNPIlH5ASkEdBRqOMSw0xOHqluFXQ&usqp=CAU"
-                />
-              </div>
+              <center>
+              <br></br>
+                <div className="output">
+                  <img
+                    id="output"
+                    alt=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbYNS2djNPIlH5ASkEdBRqOMSw0xOHqluFXQ&usqp=CAU"
+                  />
+                </div>
+              </center>
               <CardContent>
-                <Button
-                  variant="outlined"
-                  component="label"
-                  startIcon={<CloudUploadIcon />}
-                >
-                  Upload Picture
-                  <input type="file" hidden onChange={this.handleChange} />
-                </Button>
+                <center>
+                  <Button
+                    variant="outlined"
+                    component="label"
+                    startIcon={<CloudUploadIcon />}
+                  >
+                    Upload Picture
+                    <input type="file" hidden onChange={this.handleChange} />
+                  </Button>
+                </center>
               </CardContent>
             </CardActionArea>
             <CardActions>

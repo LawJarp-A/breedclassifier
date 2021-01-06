@@ -84,7 +84,7 @@ class ImageForm extends React.Component {
                 </Button>
               </div>
             </CardActions>
-            <div class ="Result"><Typography variant="h5">{this.state.breed}</Typography></div>
+            <div className ="Result"><Typography variant="h5">{this.state.breed}</Typography></div>
           </Card>
         ) : (
           <div className="Loading">

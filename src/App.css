@@ -1,3 +1,7 @@
+@font-face {
+    font-family: hackerspace;
+    src: url(./fonts/hackerspace.ttf);
+  }
 .AppBar{
     padding: 20px;
     font-family: 'PT Sans', sans-serif;
@@ -7,11 +11,24 @@
 
 .Title{
     flex-grow: 1;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: hackerspace  ;
 }
 
 .Links{
     font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
     color: black;
+}
+
+.Link{
+    font-size: 27px;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .output{
@@ -57,4 +74,16 @@
     margin-left: 50%;
     margin-right: auto;
     margin-top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .Title{
+        font-size: 20px;
+    }
+    .Link{
+        font-size: 17px;
+        padding: 5px;
+        padding-left: none;
+        padding-right: none;
+    }
 }

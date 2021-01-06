@@ -10,13 +10,16 @@ class App extends React.Component{
     return (
       <div>
         <AppBar position="static">
+          
           <div className="AppBar">
-            <div className="Title">hackerspace</div>
+            <div className="Title"> &lt;/HackerSpace&gt;</div>
             <div className="Links">
               <a href="https://github.com/HackerSpace-PESU">
-                <div className="Links">Github</div>
+                <div className="Link"><i id="github" className="fab fa-github"></i></div>
               </a>
-              <a href="https://github.com/HackerSpace-PESU"><div className="Links">Instagram</div></a>
+              <a href="https://discord.com/invite/zEpxPnP">
+                <div className="Link"><i id="discord" className="fab fa-discord"></i></div>
+              </a>
             </div>
           </div>
         </AppBar>

@@ -61,6 +61,7 @@ class ImageForm extends React.Component {
                     id="output"
                     alt=""
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbYNS2djNPIlH5ASkEdBRqOMSw0xOHqluFXQ&usqp=CAU"
+                    className="image"
                   />
                 </div>
               </center>
@@ -78,11 +79,11 @@ class ImageForm extends React.Component {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <div className="SubmitButton">
-                <Button variant="outlined" onClick={this.handleSubmit} disabled={!this.state.file}>
-                  Go!
-                </Button>
-              </div>
+                  <div className="SubmitButton">
+                    <Button variant="outlined" onClick={this.handleSubmit} disabled={!this.state.file}>
+                      Go!
+                    </Button>
+                  </div>
             </CardActions>
             <div className ="Result"><Typography variant="h5">{this.state.breed}</Typography></div>
           </Card>

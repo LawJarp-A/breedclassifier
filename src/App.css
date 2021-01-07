@@ -58,10 +58,11 @@
 }
 
 .SubmitButton{
+    justify-self: center;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     margin-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 0%; 
 }
 
 .Result{
@@ -74,6 +75,11 @@
     margin-left: 50%;
     margin-right: auto;
     margin-top: 10%;
+}
+
+.image{
+    height:200px;
+    width:auto
 }
 
 @media only screen and (max-width: 600px) {
